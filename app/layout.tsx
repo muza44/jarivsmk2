@@ -1,7 +1,5 @@
-'use client'
 import './globals.css'
 import { supabase } from '@/lib/supabase'
-import React, { useState } from 'react'
 import { Sun, Mic, Upload, Trophy, Image, Calendar, Play, Settings, MessageCircle, Home as HomeIcon } from 'lucide-react'
 import Link from 'next/link'
 import BootScreen from '@/components/BootScreen'
@@ -29,8 +27,7 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const [isBooting, setIsBooting] = useState(true);
-
+  
   // Checa sessão do usuário
   let user = null;
   try {

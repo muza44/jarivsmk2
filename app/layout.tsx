@@ -1,3 +1,4 @@
+'use client'
 import './globals.css'
 import { supabase } from '@/lib/supabase'
 import React, { useState } from 'react'
